@@ -24,6 +24,27 @@ Running R Interactively with RStudio
 The RStudio graphical user interface can be run directly off of
 ManeFrame II (M2) compute nodes using the :doc:`HPC OnDemand Web Portal <../portal>`.
 
+Running R Interactively with Jupyter
+------------------------------------
+
+Initial Setup
+~~~~~~~~~~~~~
+
+1. Log into the cluster using SSH or the :doc:`HPC OnDemand Web Portal
+   <../portal>`'s "Shell Access" and run the following commands at the command
+   prompt.
+2. ``module load python/3`` to enable access to Anaconda.
+3. ``conda create -y -n jupyter_r -c conda-forge jupyterlab r-irkernel`` to
+install Jupyter and R.
+
+Usage from the HPC OnDemand Web Portal
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Follow the :doc:`HPC OnDemand Web Portal's JupyterLab <../portal>`
+instructions, where the "Additional environment modules to load" contains
+"python/3" and "Custom environment settings" contains "source activate
+~/.conda/envs/jupyter_r".
+
 Running R Non-Interactively in Batch Mode
 -----------------------------------------
 
