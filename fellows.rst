@@ -12,6 +12,7 @@ Faculty
 * `Dick Barr <http://faculty.smu.edu/barr/>`_ (Operations Research and Engineering Management)
 * `Doran Bennett <http://www.mesosciencelab.com/>`__ (Chemistry)
 * `Ali Beskok <https://www.smu.edu/Lyle/Departments/ME/People/Faculty/BeskokAli>`_ (Mechanical Engineering)
+* `Digvijay Boob <https://people.smu.edu/dboob>`_ (Operations Research and Engineering Management)
 * `Wei Cai <https://people.smu.edu/cai/>`_ (Mathematics)
 * `Sila Cetinkaya <https://s2.smu.edu/~sila/>`_ (Operations Research and Engineering Management)
 * `Marc Christensen <http://lyle.smu.edu/%7Empc/index.htm>`_ (Electrical Engineering)
