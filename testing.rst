@@ -5,4 +5,4 @@
 Applications and Tools in Testing
 #################################
 
-.. include:: common/dcv_setup.rst
+
