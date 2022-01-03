@@ -14,7 +14,7 @@ SSH via Terminal Applications
 Users using SSH via a terminal application such as Terminal and iTerm on macOS,
 Terminal on Linux, or Putty, MobaXTerm, and WSL on Windows will be prompted in
 their terminal session for their password followed by a request for a Duo
-passcode or ``1`` for a Duo push. The passcode can come from the Duo app or
+**passcode** or ``1`` for a Duo push. The passcode can come from the Duo app or
 from an OIT procured hardware token (faculty and staff only).
 
 SFTP Clients
@@ -22,9 +22,9 @@ SFTP Clients
 
 Users using SFTP clients such as Transmit and Cyberduck on macOS or Cyberduck
 and WinSCP on Windows will be prompted by the application for their password,
-if not saved, followed by a request for a Duo passcode or ``1`` for a Duo push.
-The passcode can come from the Duo app or from an OIT procured hardware token
-(faculty and staff only).
+if not saved, followed by a request for a Duo **passcode** or ``1`` for a Duo
+push. The passcode can come from the Duo app or from an OIT procured hardware
+token (faculty and staff only).
 
 SSH Keys
 ^^^^^^^^
