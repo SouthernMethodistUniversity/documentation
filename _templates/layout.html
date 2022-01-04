@@ -74,27 +74,6 @@
 <link rel="stylesheet" href="https://sites.smu.edu/apps/e-marketing/home/style.css"> 
 <script src="https://use.fontawesome.com/a866f5a541.js"></script>
 <script src="http://www.smu.edu/js/Main/jquery.min.js"></script>
-<script type="text/javascript">
-   $(function() {
-
-       var $sidebar   = $("#security-text"), 
-           $window    = $(window),
-           offset     = $sidebar.offset(),
-           topPadding = 15;
-
-       $window.scroll(function() {
-           if ($window.scrollTop() > offset.top) {
-               $sidebar.stop().animate({
-                   marginTop: $window.scrollTop() - offset.top + topPadding
-               });
-           } else {
-               $sidebar.stop().animate({
-                   marginTop: 0
-               });
-           }
-       });
-    
-   });
 </script>
     <script type="text/javascript">
         function SubmitSearch(sVal, site, e) {
