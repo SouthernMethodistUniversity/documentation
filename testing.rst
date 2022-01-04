@@ -34,9 +34,14 @@ which allows for password-less access, but still requires Duo authentication.
 If you would like to use SSH keys, please send your request to help@smu.edu
 with "HPC: SSH Keys" in the subject line.
 
+Known Issues
+^^^^^^^^^^^^
 
+If you are using SSH keys and you are logging in without keys, you will be
+prompted by Duo twice. This double Duo prompting may impact the ability to
+login from certain non-terminal clients.
 
-
-
-
+If you are using SSH keys and you are logging in without keys and using a
+non-terminal client you may not be able to log in using a passcode alone. A
+workaround is to install the Duo app.
 
