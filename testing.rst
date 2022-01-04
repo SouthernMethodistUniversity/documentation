@@ -8,6 +8,8 @@ Applications and Tools in Testing
 Using SSH and SFTP Clients with Duo
 ===================================
 
+Until January 18, 2022 only ``login02.m2.smu.edu`` has Duo enabled.
+
 SSH via Terminal Applications
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
