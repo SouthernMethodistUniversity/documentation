@@ -22,7 +22,7 @@ Date        Workshop
 January 23  `ManeFrame II (M2) Introduction <https://smu.box.com/s/hjokgla64wpbk3swrp73xpkyzeybf373>`__
 January 30  Open Help Session
 February 6  `ManeFrame II (M2) Introduction <https://smu.box.com/s/hjokgla64wpbk3swrp73xpkyzeybf373>`__
-February 13 `Using Version Control <http://faculty.smu.edu/csc/documentation/development_tools/version_control_systems.html>`__
+February 13 `Using Version Control <http://s2.smu.edu/hpc/documentation/development_tools/version_control_systems.html>`__
 February 20 `Using Spack for Development <https://spack.readthedocs.io/en/latest/tutorial.html>`__
 February 27 Open Help Session
 March 6     `ManeFrame II (M2) Introduction <https://smu.box.com/s/hjokgla64wpbk3swrp73xpkyzeybf373>`__
