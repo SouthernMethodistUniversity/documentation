@@ -46,22 +46,14 @@ For those using PuTTY on Windows, check the box "Share SSH connection if
 possible" under "Category"; "Connection"; "SSH"; "Sharing an SSH connection
 between PuTTY tools.
 
+.. Note::
+
+   Some applications or SFTP clients don't use ControlPersist and may
+   occationally prompt for Duo authentication.
+
 SSH Keys
 ^^^^^^^^
 
-Authorization is required for SSH keys to be used for SSH and SFTP clients,
-which allows for password-less access, but still requires Duo authentication.
-If you would like to use SSH keys, please send your request to help@smu.edu
-with "HPC: SSH Keys" in the subject line.
-
-Known Issues
-^^^^^^^^^^^^
-
-If you are using SSH keys and you are logging in without keys, you will be
-prompted by Duo twice. This double Duo prompting may impact the ability to
-login from certain non-terminal clients.
-
-If you are using SSH keys and you are logging in without keys and using a
-non-terminal client you may not be able to log in using a passcode alone. A
-workaround is to install the Duo app.
+SSH keys to be used for SSH and SFTP clients, which allows for password-less
+access, but still requires Duo authentication.
 
