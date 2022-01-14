@@ -18,6 +18,12 @@ available for different operating systems. The details for Linux, macOS,
 and Windows are given below. In all cases, ManeFrame II is accesses via
 m2.smu.edu using your SMU credentials. 
 
+Users using SSH via a terminal application such as Terminal and iTerm on macOS,
+Terminal on Linux, or PuTTY, MobaXTerm, and WSL on Windows will be prompted in
+their terminal session for their password followed by a request for a Duo
+**passcode** or ``1`` for a Duo push. The passcode can come from the Duo app or
+from an OIT procured hardware token (faculty and staff only).
+
 Linux
 -----
 
@@ -30,6 +36,9 @@ generally the steps are as follows.
 
 Setting Up Key-Based Authentication
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+SSH keys to be used for SSH and SFTP clients, which allows for password-less
+access, but still requires Duo authentication.
 
 .. include:: common/ssh_key_setup_linux.rst
 
@@ -54,6 +63,9 @@ The SSH steps are generally as follows:
 
 Setting Up Key-Based Authentication
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+SSH keys to be used for SSH and SFTP clients, which allows for password-less
+access, but still requires Duo authentication.
 
 .. include:: common/ssh_key_setup_macos.rst
 
@@ -126,3 +138,28 @@ clients generally display two panes with the left side being your local
 files and the right side being your ManeFrame II files. When setting up
 access in these clients, SFTP must be chosen and your credentials will
 be your ManeFrame II credentials.
+
+Users using SFTP clients such as Transmit and Cyberduck on macOS or Cyberduck
+and WinSCP on Windows will be prompted by the application for their password,
+if not saved, followed by a request for a Duo **passcode** or ``1`` for a Duo
+push. The passcode can come from the Duo app or from an OIT procured hardware
+token (faculty and staff only).
+
+Reducing the Number of Duo Authentications
+==========================================
+
+An initial SSH/SFTP connection to M2 can be reused for subsequent connections,
+which allows for multiple connections without being prompted by Duo repeatedly.
+
+For those using OpenSSH (macOS, Linux, and Windows WSL), add the following to
+your SSH ``~/.ssh/config`` file::
+
+   Host *
+     ControlMaster auto
+     ControlPath ~/.ssh/sockets/ssh_mux_%h_%p_%r
+     ControlPersist 600
+
+For those using PuTTY on Windows, check the box "Share SSH connection if
+possible" under "Category"; "Connection"; "SSH"; "Sharing an SSH connection
+between PuTTY tools.
+

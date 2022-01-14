@@ -27,5 +27,5 @@ Contents
    :hidden:
 
    ManeFrame II Maintenance History <maintenance>
-   Testing <testing>
+..   Testing <testing>
 
