@@ -151,6 +151,9 @@ Reducing the Number of Duo Authentications
 An initial SSH/SFTP connection to M2 can be reused for subsequent connections,
 which allows for multiple connections without being prompted by Duo repeatedly.
 
+SSH
+---
+
 For those using OpenSSH (macOS, Linux, and Windows WSL), add the following to
 your SSH ``~/.ssh/config`` file::
 
@@ -159,7 +162,19 @@ your SSH ``~/.ssh/config`` file::
      ControlPath ~/.ssh/sockets/ssh_mux_%h_%p_%r
      ControlPersist 600
 
+PuTTY
+-----
+
 For those using PuTTY on Windows, check the box "Share SSH connection if
 possible" under "Category"; "Connection"; "SSH"; "Sharing an SSH connection
 between PuTTY tools.
+
+Cyberduck
+---------
+
+Cyberduck does not use SSH configurations, therefore the following setting can
+be used to enable connection persistence. Within Cyberduck:
+
+#. Select Edit, Preferences, Transfers, and then General.
+#. Under "Transfers", use the "Transfer Files" drop-down to select "Use browser connection".
 
