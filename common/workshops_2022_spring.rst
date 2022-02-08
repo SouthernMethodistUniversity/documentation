@@ -16,7 +16,7 @@ Introduction" workshop that will be given once monthly during the semester.
 =========== ==== ================================================
 Date        Time Workshop                                        
 =========== ==== ================================================
-January 19  2-4  ManeFrame II (M2) Introduction
+January 19  2-4  `ManeFrame II (M2) Introduction (Spring '22)`_
 January 25  3-5  Introduction to Text and Data Mining
 January 26  2-4  Workflows in Python
 February 2  2-4  ManeFrame II (M2) Introduction
@@ -39,4 +39,6 @@ April 20    1-4  Deep Learning with Python Part 2
 April 27    2-4  MPI/NCCL/SHMem
 May 4       2-4  ManeFrame II (M2) Introduction
 =========== ==== ================================================
+
+.. _ManeFrame II (M2) Introduction (Spring '22): https://smu.box.com/s/poe3d9ke89h5tlvwce5m2dqcvz9ja5vs
 
