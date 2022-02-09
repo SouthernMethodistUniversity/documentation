@@ -162,6 +162,8 @@ your SSH ``~/.ssh/config`` file::
      ControlPath ~/.ssh/sockets/ssh_mux_%h_%p_%r
      ControlPersist 600
 
+Then make the sockets directory via ``mkdir -p ~/.ssh/sockets``.
+
 PuTTY
 -----
 
