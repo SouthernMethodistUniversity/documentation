@@ -24,7 +24,7 @@ February 9  2-4  Workflows in R
 February 15 3-5  Finding and Preparing Text Data Sets for Mining
 Febryary 16 1-4  Machine Learning with Python Part 1
 February 17 12-1 AI for the Non-Expert
-February 18 12-1 Introduction to GitHub
+February 18 12-1 `Introduction to GitHub <https://smu.box.com/s/z3tlhiwo4x3l50ozgpbmnim0g2jk96w2>`__ `(Recording) <https://smu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b1f1c45b-2e97-4a7f-9746-ae44014a2dd0>`__
 February 23 2-4  Containers and Spack
 March 2     2-4  ManeFrame II (M2) Introduction
 March 3     1-4  Data Science Workflow with R
