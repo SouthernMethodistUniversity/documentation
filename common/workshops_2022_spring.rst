@@ -20,11 +20,11 @@ January 19  2-4  `ManeFrame II (M2) Introduction (Spring '22)`_
 January 25  3-5  Introduction to Text and Data Mining
 January 26  2-4  Workflows in Python
 February 2  2-4  ManeFrame II (M2) Introduction
-February 9  2-4  Workflows in R
+February 9  2-4  `Workflows in R <https://smu.box.com/s/qmyi0j4i0hznw2gygh1m93i2d0y9h5ut>`__ (`Recording <https://smu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8e784e8a-6b1e-43b6-be0b-ae44016ef4eb>`__)
 February 15 3-5  Finding and Preparing Text Data Sets for Mining
 Febryary 16 1-4  Machine Learning with Python Part 1
 February 17 12-1 AI for the Non-Expert
-February 18 12-1 `Introduction to GitHub <https://smu.box.com/s/z3tlhiwo4x3l50ozgpbmnim0g2jk96w2>`__ `(Recording) <https://smu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b1f1c45b-2e97-4a7f-9746-ae44014a2dd0>`__
+February 18 12-1 `Introduction to GitHub <https://smu.box.com/s/z3tlhiwo4x3l50ozgpbmnim0g2jk96w2>`__ (`Recording <https://smu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b1f1c45b-2e97-4a7f-9746-ae44014a2dd0>`__)
 February 23 2-4  Containers and Spack
 March 2     2-4  ManeFrame II (M2) Introduction
 March 3     1-4  Data Science Workflow with R
