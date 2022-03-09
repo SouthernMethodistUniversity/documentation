@@ -155,7 +155,7 @@ SSH
 ---
 
 For those using OpenSSH (macOS, Linux, and Windows WSL), add the following to
-your SSH ``~/.ssh/config`` file::
+your *local computer's* SSH ``~/.ssh/config`` file::
 
    Host *
      ControlMaster auto
