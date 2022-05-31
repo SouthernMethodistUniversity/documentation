@@ -267,7 +267,7 @@ Jupyter Notebooks can be executed non-interactively using sbatch.
        # This command is usually used to convert a notebook to a python script,
        # but we can also use it to run the notebook and write the output into 
        # the same notebook, so when you open it the output areas are populated 
-       jupyter nbconvert --to notebook --inplace --execute test_notebook.ipynb 
+       jupyter nbconvert --to notebook --inplace --execute my_jupyter_notebook.ipynb 
 
 4. Submit the job by running ``sbatch notebook_job.sbatch``.
 5. ``squeue -u $USER`` to verify that the job has been submitted to the
