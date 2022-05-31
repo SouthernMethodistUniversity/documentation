@@ -217,3 +217,58 @@ job when the job is executed by Slurm.
 6. ``sbatch python_array.sbatch``.
 7. ``squeue -u $USER`` to verify that the job has been submitted to the
    queue.
+
+
+Submitting Jupyter Notebooks to a Queue Using a sbatch Script
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jupyter Notebooks can be executed non-interactively using sbatch.
+
+1. Log into the cluster using SSH and run the following commands at the
+   command prompt. Alternatively, you can access a terminal from the web
+   portal [hpc.smu.edu](https://hpc.smu.edu) and selecting ``_MainFrame II Shell Access``
+   from the Clusters menu at the top.
+2. ``cd`` to the directory with the Jupyter notebook file(s).
+3. Edit or create an sbatch file using using preferred text editor.
+   For this example, we'll call this file ``notebook_job.sbatch``
+   Change the partition and flags, Notebook file name, and Conda 
+   environment as required for your specific application.
+   
+.. code:: bash
+
+       #!/bin/bash
+       
+       #SBATCH -J run_notebook              # Job name to display in the queue
+       #SBATCH -o run_notebook_%j.txt       # terminal output from the job, %j expands to the job id
+       #SBATCH -e run_notebook_%j.err       # error log from the job, %j expands to the job id
+       #SBATCH --partition=standard-mem-s   # partition to run on
+       #SBATCH --nodes=1                    # number of nodes to run on
+       #SBATCH --ntasks-per-node=1          # number of tasks per node 
+       #SBATCH --cpus-per-task=1            # number of cores per task
+       #SBATCH --time=0-00:30:00            # job runtime, format is D-HH:MM:SS
+       #SBATCH --mem=10G                    # memory for the job, in GB
+       #SBATCH --gres=gpu:0                 # number of GPUs gpu:1 = 1 gpu, gpu2:2 = 2 gpu
+       
+       # make sure there are no modules loaded from the environment
+       module purge
+       
+       # load the modules we want. We just need the python module
+       # for jupyterlabs and/or Anacaonda. If you are using other
+       # modules add them here
+       module load python/3
+       
+       # make sure Conda commands are available in the script
+       # and load our Conda environment. If you are not using
+       # a Conda environment, you can omit these. 
+       eval "$(conda shell.bash hook)"
+       conda activate my_conda_environment
+       
+       # run the notebook
+       # This command is usually used to convert a notebook to a python script,
+       # but we can also use it to run the notebook and write the output into 
+       # the same notebook, so when you open it the output areas are populated 
+       jupyter nbconvert --to notebook --inplace --execute test_notebook.ipynb 
+
+4. Submit the job by running ``sbatch notebook_job.sbatch``.
+5. ``squeue -u $USER`` to verify that the job has been submitted to the
+   queue.
